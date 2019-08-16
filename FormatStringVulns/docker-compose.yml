@@ -1,0 +1,11 @@
+version: "3"
+services:
+    formatstringvulns: 
+        build: .
+        container_name: formatstringvulns
+        entrypoint: /bin/bash
+        stdin_open: true
+        privileged: true
+        tty: true
+        volumes:
+            - ./src/:/formatstringvulns/
